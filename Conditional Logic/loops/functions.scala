@@ -29,6 +29,8 @@ object fncs{
         println(add(3,5))
         println("Higher Order")
         println(higher_order(2,3, (x,y) => x+y))
+        val sum = calc.add(3,_)
+        println(sum(2))
 
 
     }
