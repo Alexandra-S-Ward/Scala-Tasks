@@ -16,6 +16,8 @@ object fncs{
             println(x+y)
         }
      }
+    def higher_order(x : Double, y: Double, f : (Double, Double)=> Double): Double = f(x,y);
+
     def main(args: Array[String]){
         println(calc.add(2,3))
         println(calc.sub(2,3))
@@ -25,6 +27,8 @@ object fncs{
         calc.print_add(30,50)
         var add = (x: Int, y: Int) => x+y;  
         println(add(3,5))
+        println("Higher Order")
+        println(higher_order(2,3, (x,y) => x+y))
 
 
     }
