@@ -13,5 +13,9 @@ object forLoop{
         for(i <- lst; if i % 2 == 0){
             println(i)
         }
+        val result = for(i <- lst; if i % 2 == 1) yield {
+            i;
+        }
+        println(s"odd numbers in lst: $result")
     }
 }
