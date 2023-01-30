@@ -23,6 +23,8 @@ object fncs{
         println(s"$date    -    $message")
     }
 
+    def curried_add_function(x : Int) = (y : Int) => x + y;
+
     def main(args: Array[String]){
         println(calc.add(2,3))
         println(calc.sub(2,3))
@@ -40,6 +42,17 @@ object fncs{
         var addLog = log(date,_: String)
         addLog("Log one")
         addLog("Log two")
+        println(curried_add_function(30)(20))
+
+        // Strings
+        val test_string: String = "Ostritch"
+        val test_string2: String = " Apple"
+        val number_for_test: Int = 392
+        println(test_string.length())
+        println(test_string.concat(test_string2))
+        println(test_string + test_string2)
+        printf("%s, %s, %d", test_string, test_string2, number_for_test)
+
 
     }
 }
