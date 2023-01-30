@@ -1,3 +1,5 @@
+import java.util.Date;
+
 object fncs{
      object calc{
         def add(x : Int, y : Int): Int = {
@@ -17,6 +19,9 @@ object fncs{
         }
      }
     def higher_order(x : Double, y: Double, f : (Double, Double)=> Double): Double = f(x,y);
+    def log(date : Date, message: String) = {
+        println(s"$date    -    $message")
+    }
 
     def main(args: Array[String]){
         println(calc.add(2,3))
@@ -31,7 +36,10 @@ object fncs{
         println(higher_order(2,3, (x,y) => x+y))
         val sum = calc.add(3,_)
         println(sum(2))
-
+        val date = new Date;
+        var addLog = log(date,_: String)
+        addLog("Log one")
+        addLog("Log two")
 
     }
 }
