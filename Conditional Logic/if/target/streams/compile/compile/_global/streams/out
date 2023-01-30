@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\lexaw\OneDrive\Documents\ITC Projects\ITC Scala\Conditional Logic\if\ifelse.scala:3:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Double(30.3)[0m
+[0m[[0m[31merror[0m] [0m[0m required: Float[0m
+[0m[[0m[31merror[0m] [0m[0m        val x : Float = 30.3[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
